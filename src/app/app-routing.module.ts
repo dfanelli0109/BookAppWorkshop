@@ -14,6 +14,34 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+  },
+  {
+    path: 'toc',
+    loadChildren: () => import('./toc/toc.module').then( m => m.TocPageModule)
+  },
+  {
+    path: 'chapter1',
+    loadChildren: () => import('./chapter1/chapter1.module').then( m => m.Chapter1PageModule)
+  },
+  {
+    path: 'chapter2',
+    loadChildren: () => import('./chapter2/chapter2.module').then( m => m.Chapter2PageModule)
+  },
+  {
+    path: 'chapter3',
+    loadChildren: () => import('./chapter3/chapter3.module').then( m => m.Chapter3PageModule)
+  },
+  {
+    path: 'chapter4',
+    loadChildren: () => import('./chapter4/chapter4.module').then( m => m.Chapter4PageModule)
+  },
+  {
+    path: 'chapter5',
+    loadChildren: () => import('./chapter5/chapter5.module').then( m => m.Chapter5PageModule)
+  },
+  {
+    path: 'chapter6',
+    loadChildren: () => import('./chapter6/chapter6.module').then( m => m.Chapter6PageModule)
   }
 ];
 
